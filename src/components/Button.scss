@@ -1,0 +1,32 @@
+@import "../variables.scss";
+
+.button {
+    background-color: $purple;
+    padding: 10px 19px;
+    border-radius: 25px;
+    height: 50px;
+    outline: none;
+    border: none;
+    color: $white;
+    display: inline-block;
+    cursor: pointer;
+    display: flex;
+    font-size: 15px;
+    font-weight: 500;
+    width: 100%;
+
+    &:hover {
+        filter: brightness(90%);
+    }
+
+    &:focus {
+        filter: brightness(85%);
+    }
+
+    .buttonChildren {
+        margin: auto;
+        display: inline-block;
+        vertical-align: baseline;
+    }
+}
+

@@ -1,0 +1,129 @@
+@import "../variables.scss";
+
+
+.contactModal {
+    width: 630px;
+    max-width: 80%;
+    background-color: $white;
+    padding: 50px;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
+    margin-bottom: 100px;
+    overflow-y: auto;
+    position: relative;
+    margin-top: 90px;  
+
+    .contactHeader {
+        @include h1();
+    }
+
+    .formTitle {
+        @include text();
+        font-weight: 400;
+    }
+
+    .inputField , .textarea{
+        width: 100%;
+        border: none;
+        border-bottom: 1px solid $purple;
+        outline: none;
+        margin-bottom: 20px;
+        @include text();
+        color: $dark-grey;
+
+        &:focus {
+            background-color: rgba($purple, 0.02);
+            box-shadow: 0 5px 12px -12px $purple;
+        }
+    }
+
+    .textarea {
+        resize: none;
+    }
+    @media only screen and (max-width: 500px) {
+        margin: auto;
+        margin-right: 50px;
+        width: 400px;
+    }
+}
+
+.modalOverlay {
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1);
+    z-index: 100;
+}
+
+.main {
+    display: flex;
+    min-width: 450px;
+    margin: 50px 0 100px 0;
+    @include text;
+    flex-direction: row;
+
+    @media only screen and (max-width: 500px) {
+        display: block;
+        margin-left: 50px;
+    }
+    
+    .left {
+        margin-top: 120px;
+        text-align: left;
+        width: 55%;
+        padding-right: 10px;
+    }
+
+    .right {
+        width: 40%;
+        margin-left: 50px;
+        position: relative;
+    }
+
+    .title {
+        @include h1;
+    }
+
+    .bodytext {
+        margin-bottom: 16px;   
+    }
+
+    .contact {
+        display: inline-block;
+        margin-top: 10px;
+        z-index: 4;
+    }
+
+    .sensor1, .sensor2, .sensor3 {
+        position: absolute;
+        left: 0;
+        transition: 1.2s all;
+        width: 100%;
+
+        &:hover {
+            transform: translateY(-55px);
+            transition: 0.7s all;
+        }
+    }
+
+    .sensor1 {
+        z-index: 3; 
+    }
+
+    .sensor2 {
+        z-index: 2;
+        top: 125px;
+    }
+
+    .sensor3 {
+        z-index: 1;
+        top: 250px;
+    }
+}
+
