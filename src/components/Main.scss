@@ -1,5 +1,18 @@
 @import "../variables.scss";
 
+.ReactModal__Overlay {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.ReactModal__Overlay--after-open{
+    opacity: 1;
+}
+
+.ReactModal__Overlay--before-close{
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
 
 .contactModal {
     width: 630px;
@@ -7,7 +20,7 @@
     background-color: $white;
     padding: 50px;
     outline: none;
-    border-radius: 10px;
+    border-radius: 50px;
     box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 100px;
     overflow-y: auto;
@@ -16,6 +29,7 @@
 
     .contactHeader {
         @include h1();
+        font-size: 30px;
     }
 
     .formTitle {
@@ -70,27 +84,39 @@
 
     @media only screen and (max-width: 500px) {
         display: block;
-        margin-left: 50px;
+        margin: 0 0 0 50px;
+        
     }
     
     .left {
-        margin-top: 120px;
+        margin-top: 80px;
         text-align: left;
         width: 55%;
         padding-right: 10px;
+
+
+        @media only screen and (max-width: 500px) {
+            width: 100%;
+            padding-right: 50px;
+            margin-top: 30px;
+            margin-bottom: 40px;
+        }
     }
 
     .right {
-        width: 40%;
-        margin-left: 50px;
+        width: 30%;
+        margin-left: 100px;
         position: relative;
     }
 
     .title {
         @include h1;
+        font-weight: 400;
+        letter-spacing: -1px;
     }
 
     .bodytext {
+        margin-top: 16px;
         margin-bottom: 16px;   
     }
 
@@ -108,7 +134,7 @@
 
         &:hover {
             transform: translateY(-55px);
-            transition: 0.7s all;
+            transition: 1.2s all;
         }
     }
 
@@ -118,12 +144,12 @@
 
     .sensor2 {
         z-index: 2;
-        top: 125px;
+        top: 100px;
     }
 
     .sensor3 {
         z-index: 1;
-        top: 250px;
+        top: 190px;
     }
 }
 

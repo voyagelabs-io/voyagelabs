@@ -6,7 +6,7 @@
     border-radius: 25px;
     height: 50px;
     outline: none;
-    border: none;
+    border: 2px solid $purple;
     color: $white;
     display: inline-block;
     cursor: pointer;
@@ -14,13 +14,12 @@
     font-size: 15px;
     font-weight: 500;
     width: 100%;
+    transition: 0.2s all;
 
     &:hover {
-        filter: brightness(90%);
-    }
-
-    &:focus {
-        filter: brightness(85%);
+        background-color: $white !important;
+        color: $purple;
+        transition: 0.2s all;
     }
 
     .buttonChildren {

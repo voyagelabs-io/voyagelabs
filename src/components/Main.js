@@ -23,19 +23,19 @@ const Main = () => {
         overlayClassName="modalOverlay"
       >
         <div className="contactHeader">Questions? Reach out to us!</div>
-        <form action="https://formspree.io/carrierong37@gmail.com" method="POST">
+        <form action="https://formspree.io/carrie@medella.ca" method="POST">
 
           <div className="formTitle">Name</div>
-          <input className="inputField" type="text" name="name"/>
+          <input className="inputField" type="text" name="Name"/>
 
           <div className="formTitle">Email</div>
           <input className="inputField" type="text" name="_replyto"/>
 
           <div className="formTitle">Subject</div>
-          <input className="inputField" />
+          <input className="inputField" name="Subject"/>
 
           <div className="formTitle">Message</div>
-          <textarea className="textarea" rows="5" />
+          <textarea className="textarea" rows="5" name="Message"/>
 
           <Button type="submit">Send</Button>
         </form>
