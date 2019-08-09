@@ -13,6 +13,10 @@ Modal.setAppElement('#root');
 const Main = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
+  const buttonClick = () => {
+    window.open("https://angel.co", "_blank");
+  }
+
   return (
     <>
       <Modal
@@ -45,13 +49,17 @@ const Main = () => {
           <h1 className="title">We’re finding a better way </h1>
           <div className="bodytext">
           to monitor and collect health data with the best-in-class sensors that detect drugs, 
-          glucose, proteins and other biomolecules non-invasively.
+          metabolites, proteins and other biomolecules.
+          
+          Learn more about how our sensor platform works, and how it can help you.
           </div>
-          <div className="bodytext">
-          Learn more about how our sensor platform works, and if it can help you.
-          </div>
-          <div className="contact">
-          <Button onClick={() => setModalOpen(true)}>Contact Us</Button>
+          <div className="buttons">
+            <div className="contact">
+            <Button onClick={() => setModalOpen(true)}>Contact Us</Button>
+            </div>
+            <div className="join">
+            <Button onClick={() => buttonClick()}>Join Our Voyage</Button>
+            </div>
           </div>
         </div>
         <div className="right">

@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/voyage/static/css/main.fb51767e.chunk.css",
-    "main.js": "/voyage/static/js/main.2d58a603.chunk.js",
-    "main.js.map": "/voyage/static/js/main.2d58a603.chunk.js.map",
+    "main.css": "/voyage/static/css/main.cf121e33.chunk.css",
+    "main.js": "/voyage/static/js/main.47845a06.chunk.js",
+    "main.js.map": "/voyage/static/js/main.47845a06.chunk.js.map",
     "runtime~main.js": "/voyage/static/js/runtime~main.9361fa03.js",
     "runtime~main.js.map": "/voyage/static/js/runtime~main.9361fa03.js.map",
     "static/js/2.af2d5a30.chunk.js": "/voyage/static/js/2.af2d5a30.chunk.js",
     "static/js/2.af2d5a30.chunk.js.map": "/voyage/static/js/2.af2d5a30.chunk.js.map",
     "index.html": "/voyage/index.html",
-    "precache-manifest.13aef4ffce539890b17594bff5bcdf97.js": "/voyage/precache-manifest.13aef4ffce539890b17594bff5bcdf97.js",
+    "precache-manifest.a5b3c96961060b53536bfbb07208c6c4.js": "/voyage/precache-manifest.a5b3c96961060b53536bfbb07208c6c4.js",
     "service-worker.js": "/voyage/service-worker.js",
-    "static/css/main.fb51767e.chunk.css.map": "/voyage/static/css/main.fb51767e.chunk.css.map",
+    "static/css/main.cf121e33.chunk.css.map": "/voyage/static/css/main.cf121e33.chunk.css.map",
     "static/media/rocket.svg": "/voyage/static/media/rocket.fe9f5eed.svg",
-    "static/media/sensor1.png": "/voyage/static/media/sensor1.8f290421.png",
-    "static/media/sensor2.png": "/voyage/static/media/sensor2.4e008ef0.png",
-    "static/media/sensor3.png": "/voyage/static/media/sensor3.61c5d34b.png"
+    "static/media/sensor1.png": "/voyage/static/media/sensor1.cc5471ab.png",
+    "static/media/sensor2.png": "/voyage/static/media/sensor2.b2b95891.png",
+    "static/media/sensor3.png": "/voyage/static/media/sensor3.1abc3357.png"
   }
 }

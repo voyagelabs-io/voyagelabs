@@ -20,7 +20,7 @@
     background-color: $white;
     padding: 50px;
     outline: none;
-    border-radius: 50px;
+    border-radius: 20px;
     box-shadow: 0 0 40px 5px rgba(0, 0, 0, 0.2);
     margin-bottom: 100px;
     overflow-y: auto;
@@ -55,9 +55,8 @@
     .textarea {
         resize: none;
     }
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 600px) {
         margin: auto;
-        margin-right: 50px;
         width: 400px;
     }
 }
@@ -78,78 +77,154 @@
 .main {
     display: flex;
     min-width: 450px;
-    margin: 50px 0 100px 0;
+    padding: 0 40px;
     @include text;
-    flex-direction: row;
+    vertical-align: middle;
+    height: inherit;
 
-    @media only screen and (max-width: 500px) {
+    @media only screen and (max-width: 600px) {
         display: block;
-        margin: 0 0 0 50px;
-        
+        padding: 0 10%;
+        width: 100%;
+        min-width: 0;
+        margin-top: 70px;
     }
     
     .left {
-        margin-top: 80px;
+        display: flex;
         text-align: left;
         width: 55%;
-        padding-right: 10px;
-
-
-        @media only screen and (max-width: 500px) {
+        flex-direction: column;
+        align-self: center;
+      
+        @media only screen and (max-width: 600px) {
+            display: block;
             width: 100%;
-            padding-right: 50px;
             margin-top: 30px;
             margin-bottom: 40px;
+            padding: 0;
         }
+
+        .title {
+            @include h1;
+            font-weight: 400;
+            letter-spacing: -1px;
+        }
+    
+        .bodytext {
+            margin-top: 16px;
+            margin-bottom: 16px;   
+        }
+
+        .buttons {
+            display: block;
+        }
+    
+        .contact {
+            display: inline-block;
+            margin-top: 10px;
+            z-index: 4;
+        }
+    
+        .join {
+            display: inline-block;
+            margin-left: 20px;
+    
+            @media only screen and (max-width: 600px) {
+                display: inline-block;
+                margin-left: 20px;
+            }
+    
+            @media only screen and (max-width: 374px) {
+                margin-left: 0;
+                margin-top: 20px;
+            }    
+        }    
     }
 
     .right {
-        width: 30%;
-        margin-left: 100px;
+        width: 40%;
+        max-width: 350px;
+        margin-left: 50px;
         position: relative;
-    }
 
-    .title {
-        @include h1;
-        font-weight: 400;
-        letter-spacing: -1px;
-    }
-
-    .bodytext {
-        margin-top: 16px;
-        margin-bottom: 16px;   
-    }
-
-    .contact {
-        display: inline-block;
-        margin-top: 10px;
-        z-index: 4;
-    }
-
-    .sensor1, .sensor2, .sensor3 {
-        position: absolute;
-        left: 0;
-        transition: 1.2s all;
-        width: 100%;
-
-        &:hover {
-            transform: translateY(-55px);
-            transition: 1.2s all;
+        @media only screen and (max-width: 767px) {
+            margin-top: 50px;
         }
-    }
 
-    .sensor1 {
-        z-index: 3; 
-    }
+        @media only screen and (max-width: 600px) {
+            display: block;
+            width: 70%;
+            margin: 20px auto;
+            margin-bottom: 100px;
+        }
 
-    .sensor2 {
-        z-index: 2;
-        top: 100px;
-    }
+        .sensor1, .sensor2, .sensor3 {
+            position: absolute;
+            display: block;
+            left: 0;
+            transition: 1.2s all;
+            width: 100%;
+            user-select: none;
 
-    .sensor3 {
-        z-index: 1;
-        top: 190px;
+            &:hover {
+                transition: 1.2s all;
+            }
+        }
+    
+        .sensor1 {
+            z-index: 3; 
+            top: calc(50%);
+            transform: translateY(-110%);
+
+            &:hover {
+                transform: translateY(calc(-55px - 110%));
+            }
+
+            @media only screen and (max-width: 600px) {
+                top: 0;
+                transform: translateY(10%);
+                &:hover {
+                    transform: translateY(calc(-55px + 10%));
+                }
+            }    
+        }
+    
+        .sensor2 {
+            z-index: 2;
+            top: 50%;
+            transform: translateY(-50%);
+
+            &:hover {
+                transform: translateY(calc(-55px - 50%));
+            }
+
+            @media only screen and (max-width: 600px) {
+                top: 0;
+                transform: translateY(50%);
+                &:hover {
+                    transform: translateY(calc(-55px + 50%));
+                }
+            }    
+        }
+    
+        .sensor3 {
+            z-index: 1;
+            top: 50%;
+            transform: translateY(10%);
+
+            &:hover {
+                transform: translateY(calc(-55px + 10%));
+            }
+
+            @media only screen and (max-width: 600px) {
+                top: 0;
+                transform: translateY(95%);
+                &:hover {
+                    transform: translateY(calc(-55px + 95%));
+                }
+            }    
+        }    
     }
 }
 
