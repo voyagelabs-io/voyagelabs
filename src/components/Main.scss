@@ -107,13 +107,10 @@
 
         .title {
             @include h1;
-            font-weight: 400;
-            letter-spacing: -1px;
         }
     
         .bodytext {
-            margin-top: 16px;
-            margin-bottom: 16px;   
+            margin-bottom: 16px;  
         }
 
         .buttons {
@@ -144,7 +141,7 @@
 
     .right {
         width: 40%;
-        max-width: 350px;
+        max-width: 300px;
         margin-left: 50px;
         position: relative;
 

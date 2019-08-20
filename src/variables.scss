@@ -1,18 +1,19 @@
 $purple: #2B009E;
-$dark-grey: #252525;
+$dark-grey: #494949;
 $medium-grey: rgb(145, 145, 145);
 $white: #FFFFFF;
 
 @mixin text {
-    font-family: 'Rubik';
+    font-family: 'Nunito Sans';
     font-weight: 300;
-    font-size: 15px;
+    font-size: 17px;
     line-height: 2.0;
+    color: $dark-grey;
 }
 
 @mixin h1 {
-    font-family: 'Rubik';
-    font-weight: 400;
+    font-family: 'Nunito Sans';
+    font-weight: 600;
     color: $purple;
     font-size: 40px;
     margin: 0 0 16px 0;
