@@ -14,7 +14,7 @@ const Main = () => {
   const [modalOpen, setModalOpen] = useState(false);
 
   const buttonClick = () => {
-    window.open("https://angel.co", "_blank");
+    window.open("https://angel.co/company/voyage-labs", "_blank");
   }
 
   return (
@@ -48,10 +48,9 @@ const Main = () => {
         <div className="left">
           <h1 className="title">We’re finding a better way </h1>
           <div className="bodytext">
-          to monitor and collect health data with the best-in-class sensors that detect drugs, 
-          metabolites, proteins and other biomolecules.
-          
-          Learn more about how our sensor platform works, and how it can help you.
+          Voyage Labs is building best-in-class sensors to monitor small molecules, lipids, 
+          proteins and drugs. Learn more about how our sensor platform works, 
+          and how it can help you build a better detection system.
           </div>
           <div className="buttons">
             <div className="contact">
