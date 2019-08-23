@@ -6,9 +6,6 @@ import Navbar from './components/Navbar';
 import Main from './components/Main';
 import NotFound from './components/NotFound';
 
-import fb from './img/iconfb.png';
-import twitter from './img/icontwitter.png';
-
 
 const App = () => {
   return (
