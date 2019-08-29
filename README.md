@@ -42,5 +42,6 @@
  $ git commit -m "Your message"
  $ git push -u origin master
  ```
- It will take ~5 minutes for the live website to be updated
+ After you've pushed, the route may have been changed and the site will display "there is no GitHub pages here". If this happens, go to the Settings of this repo to the GitHub pages section and change to "
+ It may take ~5 minutes for the live website to be updated
  And you're done! :)
