@@ -34,7 +34,7 @@
  ```bash
  $ yarn build
  ```
- This creates a 'build' folder inside the **voyagelabs** repo folder on your laptop. I've automated this process so that the old 'build' folder is deleted and renamed to docs (this is necessary for the website hosting)
+ This creates a 'build' folder inside the **voyagelabs** repo folder on your laptop. Rename this folder to "Docs" and delete the old Docs folder
  
  ## Deploy
  ```bash
@@ -42,6 +42,7 @@
  $ git commit -m "Your message"
  $ git push -u origin master
  ```
- After you've pushed, the route may have been changed and the site will display "there is no GitHub pages here". If this happens, go to the Settings of this repo to the GitHub pages section and change Source to "
+ After you've pushed, the route may have been changed and the site will display "there is no GitHub pages here". If this happens, go to the Settings of this repo to the GitHub pages section and change Source to "master brance /docs folder" and enter the custom domain "www.voyagelabs.io"
+ 
  It may take ~5 minutes for the live website to be updated
  And you're done! :)
